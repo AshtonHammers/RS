@@ -29,4 +29,8 @@
     <None Include="wwwroot\_Archive\now-ui-dashboard-master\.github\workflows\main.yml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RS.DATA.EF\RS.DATA.EF.csproj" />
+  </ItemGroup>
+
 </Project>
