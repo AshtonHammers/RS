@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Controllers\AdministrationController.cs" />
+    <Content Include="Models\AdministrationViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.33" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.35" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.35" />
@@ -18,6 +23,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\_Archive\now-ui-dashboard-master\.github\workflows\main.yml" />
   </ItemGroup>
 
 </Project>
