@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RS.UI.MVC.Data;
+using System.Data;
 
 namespace RS.UI.MVC
 {
@@ -17,6 +18,8 @@ namespace RS.UI.MVC
 			builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 			builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+				.AddRoles<IdentityRole>().AddRoleManager < RoleManager < IdentityRole >> ()
+
 				.AddEntityFrameworkStores<ApplicationDbContext>();
 			builder.Services.AddControllersWithViews();
 
